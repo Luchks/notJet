@@ -1,0 +1,21 @@
+01:delete row white= empty
+:g/^$/d
+02:delete row != identity
+:g!/identificador:/d
+03:delete row != " " back space
+:g!/ /d
+-------------------------------
+delete *modificado.csv
+rm -f *modificado.csv
+
+por que estamos eliminando los *modificado.csv
+pues, ya no queremos los *modificado.csv
+pues tienen informacion que no queremos
+
+para pasar lo de identificador excedente a marca
+pagina_1_seccion_3_modificado.csv,"Marca: Mercedes-Benz, Scania
+pagina_1_seccion_3_modificado.csv,identificador:AA6AI00005 Mercedes-Benz;Renault;Scania;Volvo// esto lo agregue yo
+pagina_1_seccion_3_modificado.csv,ØInt.: 21 mm
+pagina_1_seccion_3_modificado.csv,Ubicación: Aro delantero
+pagina_1_seccion_3_modificado.csv,Obs.: Para aro trilex
+-------------------------------

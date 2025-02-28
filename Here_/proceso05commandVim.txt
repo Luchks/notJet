@@ -1,0 +1,9 @@
+01:delete row white= empty
+:g/^$/d
+02:delete row != identity
+:g!/identificador:/d
+03:delete row != " " back space
+:g!/ /d
+-------------------------------
+delete *modificado.csv
+rm -f *modificado.csv
